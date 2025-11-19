@@ -1,0 +1,90 @@
+.services-sec{
+    width: 100%;   
+    padding-top: 2rem;
+}
+.services-inner{
+    width: 95%;
+    margin:  0 auto;
+    display: flex;
+    flex-direction: column;
+
+}
+.services-header{
+    width: 95%;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: rgb(48, 168, 48);
+    text-align: center;
+}
+.services-header p{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.services-con{
+    width: 100%;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    gap: 2rem;
+}
+
+.service{
+    width: 22rem;
+    padding: 15px;
+    background-color: rgb(186, 194, 184);
+    position: relative;
+    margin:  0 auto;
+}
+.service::after{
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 15px;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: solid 2px rgb(48, 168, 48);
+    z-index: -1;
+}
+.service h3{
+    width: 70%;
+}
+
+@media (max-width: 620px) {
+    .services-header{
+        padding: 10px;
+    }
+    .services-header p{
+        width: 100%;
+    }
+}
+@media (max-width: 848px) {
+    .services-header p{
+        font-size: 12px;
+    }
+    .services-header h2{
+        font-size: 15px;
+    }
+    .service{
+        width: 14rem;
+
+    }   
+    .services-con{
+        grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    }
+    .service h3{
+        font-size: 17px;
+    }
+    .service p, li{
+        font-size: 12px;
+        margin: 2px;
+        padding: 2px;
+    }
+}
+@media (max-width: 400px) {
+    .service{
+        width: 13rem;
+    }
+}

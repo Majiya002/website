@@ -1,0 +1,50 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(230, 235, 230);
+    font-family: kanit;
+}
+.header{
+    width: 100%;
+    height: 3rem;
+    background-color: rgb(190, 190, 190);
+}
+.inner-header{
+    width: 98%;
+    margin:  0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    padding-top: 10px;
+}
+.header-logo-con{
+    width: 40px;
+    height: 35px;
+
+}
+.header-logo{
+    width: 100%;
+    height: 100%;
+}
+.options{
+    padding-top: 5px;
+    padding-right: 5px;
+}
+.options a{
+    text-decoration: none;
+    color: black;
+    font-weight:  bold;
+}
+
+@media (max-width: 400px) {
+    body h1{
+        font-size: 25px;
+    }
+    body h2{
+        font-size: 18px;
+    }
+    body p{
+        font-size: 15px;
+    }
+}

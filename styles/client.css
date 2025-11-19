@@ -1,0 +1,57 @@
+.clients-sec{
+    width: 100%;
+    padding-top: 3rem;
+
+}
+.clients-inner h2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+.clients-inner{
+    width: 96%;
+    background-color: rgb(186, 194, 184);
+    margin:  0 auto;
+    border-radius: 10px;
+    border: solid 1px green;
+}
+.clients-con{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: 1.5rem;
+}
+.client{
+    width: 18rem;
+    height: 13rem;
+    margin: 0 auto; 
+}
+.client-logo{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@media (max-width: 950px) {
+    .clients-con{
+        grid-template-columns: repeat(auto-fit, minmax(15rem,1fr));
+    }
+    .client{
+        width: 15rem;
+        height: 8rem;
+    }   
+}
+
+@media (max-width: 530px) {
+    .clients-inner h2{
+        font-size: 15px;
+    }
+    .clients-con{
+        grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+    }
+    .client{
+        width: 8rem;
+        height: 3rem;
+    }
+}
