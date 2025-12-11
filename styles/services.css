@@ -83,8 +83,12 @@
         padding: 2px;
     }
 }
+.service ul{
+    padding: 1rem;
+}
 @media (max-width: 400px) {
     .service{
         width: 13rem;
     }
+
 }
