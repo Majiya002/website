@@ -4,13 +4,13 @@
 }
 .landing-sec{
   width: 100%;
-  height: 100vh;
+  height: 100lvh;
   background-color: white;
   z-index: -2;
 }
 .landing-sec-inner{
   width: 98%;
-  height: 100vh;
+  height: 100lvh;
   position: relative;
   background-color: black;
 }
@@ -70,7 +70,7 @@
 
 .landing-sec-inner-responsive{
   width: 100%;
-  height: 90vh;
+  height: 90lvh;
   position: relative;
   background-color: black;
   display: none;
@@ -182,3 +182,4 @@
     bottom: 7%;
   }
 }
+
